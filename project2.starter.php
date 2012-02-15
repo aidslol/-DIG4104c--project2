@@ -80,14 +80,12 @@
 				
 				print "<p>You have visited this system $hitcount times</p>";
 				
-				print "<form>";
 				print "<fieldset>";
 				print "<input name='idnumber' type='text' /> Please enter your ID number <br />";
 				print "<input name='name' type='text' /> Please enter your name <br />";
 				print "<input name='action' type='submit' value='Submit' />";
 				print "<input name='action' type='submit' value='Clear History' />";
 				print "</fieldset>";
-				print "</form>";
 			}
 			///////// MAIN //////////////
 
