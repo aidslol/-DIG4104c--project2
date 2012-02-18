@@ -1,1 +1,0 @@
-I'm not sure how the hell this thing works yet. --philip

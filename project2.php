@@ -1,6 +1,11 @@
 <html>
 	<head>
 		<title>Project 2 Starter Kit:Namecheck</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+		<link rel="stylesheet" href="css/text.css" />
+		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
 	</head>
 	<body>
 		<form method='post'>
@@ -11,7 +16,7 @@
 			// to maintain two tables: one for counting visits, and one for checking names.
 
 			$Testnumber=4;
-			$onmac=1; // set this to 0 if running on Sulley
+			$onmac=0; // set this to 0 if running on Sulley
 
 			function logprint($what,$when)
 			{global $Testnumber;
@@ -89,7 +94,7 @@
 			}
 			///////// MAIN //////////////
 
-			print "<h2>Starter Kit for DIG4104c Project 2</h2>";
+			print "<h2 class='head'>Toontown Election 2012</h2>";
 
 			// First, open the Database
 
@@ -103,10 +108,10 @@
 			}
 			else // on sulley. Use your own dbname, dbuser and dbpassword
 			{
-			    $connection=mysql_connect("localhost","dbuser","dbpassword")
+			    $connection=mysql_connect("localhost","ph652925","carter")
 					or print "connect failed because ".mysql_error();  
 					
-			    mysql_select_db("dbname",$connection) // all projects are in ONE db
+			    mysql_select_db("ph652925",$connection) // all projects are in ONE db
 					or print "select failed because ".mysql_error();
 			}
 
@@ -119,7 +124,7 @@
 				if ($action=='Submit')
 				{
 					if (!$idnumber)
-						print "With no ID number, I don't know what to do.";
+						print "<span class='error'>Please enter your ID number.</span>";
 					else
 					{
 						$maybename=checkperson($connection, $idnumber);
@@ -129,7 +134,7 @@
 						else if ($name)
 							storeperson($connection, $idnumber, $name);
 						else
-							print "<p>This number ($idnumber) is not in the database.";
+							print "<p class='error'>This number ($idnumber) is not in the database.</p>";
 					} # idnumber block
 				}
 				else if ($action=='Clear History') 
