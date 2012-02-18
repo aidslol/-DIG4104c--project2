@@ -1,0 +1,12 @@
+.head 
+{
+	width:310px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.error
+{
+	font-size:12px;
+	color:red;
+}	
