@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Project 2 Starter Kit:Namecheck</title>
+		<title>Project 2: Login</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
 		<link rel="stylesheet" href="css/text.css" />
