@@ -14,6 +14,7 @@
 <div data-role="page" id="panel1">
 	<h2 class="head">Toontown Election 2012</h2>
 	<div class="subhead">
+		<p>Welcome namehere</p>
 		<p>Please select a candidate.</p>
 	</div>
 
