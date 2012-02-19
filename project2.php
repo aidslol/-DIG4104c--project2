@@ -34,6 +34,7 @@
 					if ($row=mysql_fetch_array($result))	
 						return $row[0];
 					else
+						print "Welcome to the 2012 Toontown elections $name";
 						return '';
 			} # checkperson
 
