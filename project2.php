@@ -1,3 +1,4 @@
+<!DOCTYPE html> 
 <html>
 	<head>
 		<title>Project 2: Login</title>
@@ -87,15 +88,20 @@
 				print "<p>You have visited this system $hitcount times</p>";
 				
 				print "<fieldset>";
-				print "<input name='idnumber' type='text' /> Please enter your ID number <br />";
-				print "<input name='name' type='text' /> Please enter your name <br />";
-				print "<input name='action' type='submit' value='Submit' />";
-				print "<input name='action' type='submit' value='Clear History' />";
+				print "<label for='idnumber'>ID Number</label>";
+				print "<input name='idnumber' type='number' placeholder='Number from 1001 to 1049' /><br />";
+				print "<label for='name'>Name</label>";
+				print "<input name='name' type='text' placeholder='Firstname Lastname' /><br />";
+				print "<div class='ui-grid-a'>";
+				print "<div class='ui-block-a'><input name='action' type='submit' value='Submit' /></div>";
+				print "<div class='ui-block-b'><input name='action' type='submit' value='Clear History' /></div>";
+				print "</div>";
 				print "</fieldset>";
 			}
 			///////// MAIN //////////////
 
 			print "<h2 class='head'>Toontown Election 2012</h2>";
+			print "<a href='results.php'>See the current results.</a>";
 
 			// First, open the Database
 
