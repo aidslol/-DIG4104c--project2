@@ -28,10 +28,10 @@ $count=mysql_num_rows($result);
 // If result matched $myusername and $mypassword, table row must be 1 row
 
 if($count==1){
-// Register $myusername, $mypassword and redirect to file "login_success.php"
+// Register $myusername, $mypassword and redirect to file "candidates.php"
 session_register("myusername");
 session_register("mypassword"); 
-header("location:login_success.php");
+header("location:candidates.php");
 }
 else {
 print "<p>Wrong Username or Password</p>";
