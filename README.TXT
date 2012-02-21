@@ -5,3 +5,5 @@ Corey here: What I've added is a jQuery-formatted version, along with folders fo
 login now working at minimum capacity. --philip
 	addendum: I plan on merging main_login.php with project2.php.
 		as it is right now, checklogin.php points to candidates.php, but it's not properly cycling through the pesudo pages you guys have created, so I'll try to fix that.
+
+missed class today and don't have contact info for corey or stephanie, can anyone update with what's going on? --philip
