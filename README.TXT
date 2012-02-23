@@ -9,3 +9,5 @@ login now working at minimum capacity. --philip
 missed class today and don't have contact info for corey or stephanie, can anyone update with what's going on? --philip
 
 class was pretty much just the groups presenting project 3 ideas, and the information that's in the lec7 presentation and lab6 doc on the class site. My email: stefaneyr@knights.ucf.edu, phone #: (321)960-8387. facebook messages are fine, too. --stefaney
+
+*** Database Info *** ph652925 / carter   ---philip
