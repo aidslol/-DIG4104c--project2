@@ -10,9 +10,14 @@
 	<body>
 		<h2>Toontown 2012 Elections</h2>
 		<form name='form1' method='post' action='checklogin.php'>
-			<input label='Voter ID Number' name='myusername' type='text' id='myusername'>
-			<input label='Name' name='mypassword' type='text' id='mypassword'>
+			<label for='myusername' class='ui-hidden-accessible'>Username:</label>
+			<input name='myusername' type='text' id='myusername' value='' placeholder="Username" />
+			<label for="" class="ui-hidden-accessible">Voter Number:</label>
+			<input name='voterNum' type='text' id='voterNum' value="" placeholder="Voter Number" />
 			<input type='submit' name='Submit' value='Login'>
+			
+			<!-- register a new user -->
+			<input type='submit' name='register' value='Register'>
 		</form>
 		
 	</body>
