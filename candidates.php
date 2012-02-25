@@ -73,7 +73,7 @@
 			<a href="#panel2" data-role="button" data-form="ui-body-b">Next</a></div>
 		</div><!-- /page -->
 
-		<div data-role="page" id="panel2">
+		<div data-role="page" id="panel2" data-theme="d">
 			<div class="ui-header ui-bar-d" role="banner" data-role="header" data-form="ui-bar-d" data-theme="d" data-swatch="d">
 				<h2 class="head" aria-level="1" role="heading" tabindex="0">Toontown Election 2012</h2>
 			</div>
@@ -103,7 +103,7 @@
 			</div>
 		</div><!-- /page -->
 
-		<div data-role="page" id="panel3">
+		<div data-role="page" id="panel3" data-theme="c">
 			<div class="ui-header ui-bar-d" role="banner" data-role="header" data-form="ui-bar-d" data-theme="d" data-swatch="d">
 				<h2 class="head" aria-level="1" role="heading" tabindex="0">Toontown Election 2012</h2>
 			</div>
