@@ -1,6 +1,5 @@
 .head 
 {
-	width:310px;
 	margin-right:auto;
 	margin-left:auto;
 }
@@ -13,4 +12,8 @@
 
 li {
 	line-height: 27px;
+}
+
+.subhead {
+	margin-left: 1em;
 }
