@@ -9,11 +9,11 @@
 	// Need to get from login page to this one, then from here to some page that says you voted/go to results.
 	// Might start something like this, but need to save vote and add it to results.
 
-	setcookie("idnumber",$_POST['idnumber']);
-	setcookie("name",$_POST['name']);
+	setcookie("voterNum",$_POST['voterNum']);
+	setcookie("myusername",$_POST['myusername']);
 
-	$idnumber = $_POST['idnumber'];
-	$name = $_POST['name'];
+	$idnumber = $_POST['voterNum'];
+	$name = $_POST['myusername'];
 	
 	/*
 	if(isset($_POST['submit']) && (!$logged_in)) {
