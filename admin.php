@@ -22,7 +22,7 @@ header("location:main_login.php");
 $connection=mysql_connect("localhost","ph652925","carter")
 or print "connect failed because ".mysql_error();  
 					
-mysql_select_db("ph652925",$connection) // all projects are in ONE db
+mysql_select_db("ph652925",$connection)
 or print "select failed because ".mysql_error();
 
 function erasehistory($connection)
