@@ -14,15 +14,20 @@
 				<h2 class="head" aria-level="1" role="heading" tabindex="0">Toontown 2012 Elections</h2>
 			</div>
 			<h3>test account is john / 1234 </h3>
-			<form name='form1' method='post' action='checklogin.php'>
+			<form name='login' method='post' action='checklogin.php'>
 				<label for='myusername' class='ui-hidden-accessible'>Username:</label>
 				<input name='myusername' type='text' id='myusername' class="input ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-a" data-form="ui-body-a" value='' placeholder="Username" />
 				<label for="voterNum" class="ui-hidden-accessible">Voter Number:</label>
 				<input name='voterNum' type='text' id='voterNum' class="input ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-a" data-form="ui-body-a" value="" placeholder="Voter Number" />
 				<input type='submit' name='Submit' value='Login' />
 				
-				<!-- register a new user -->
-				<input type='submit' name='register' value='Register' />
+			</form>
+			<form name='register' method='post' action='checklogin.php'>
+				<label for='myusername' class='ui-hidden-accessible'>Username:</label>
+				<input name='myusername' type='text' id='myusername' class="input ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-a" data-form="ui-body-a" value='' placeholder="Username" />
+				<label for="voterNum" class="ui-hidden-accessible">Voter Number:</label>
+				<input name='voterNum' type='text' id='voterNum' class="input ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-a" data-form="ui-body-a" value="" placeholder="Voter Number" />
+				<input type='submit' name='Submit' value='Register' />
 			</form>
 		</div>
 	</body>
