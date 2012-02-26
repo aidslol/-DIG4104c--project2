@@ -10,7 +10,7 @@ $tbl_name="members"; // Table name
 mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
 mysql_select_db("$db_name")or die("cannot select DB");
 
-// Define $myusername and $voterNum 
+// Define $myusername, $voterNum, $number, and $name 
 $myusername=$_POST['myusername']; 
 $voterNum=$_POST['voterNum'];
 
@@ -20,21 +20,13 @@ $voterNum = stripslashes($voterNum);
 $myusername = mysql_real_escape_string($myusername);
 $voterNum = mysql_real_escape_string($voterNum);
 
+// gets data provided in login from the database
 $sql="SELECT * FROM $tbl_name WHERE username='$myusername' and password='$voterNum'";
 $result=mysql_query($sql);
 
 // Mysql_num_row is counting table row
 $count=mysql_num_rows($result);
 // If result matched $myusername and $voterNum, table row must be 1 row
-
-#storemember: Add this name and number to the 'members' table
-function storemember($connection, $number, $name)
-{
-		$query="INSERT INTO members VALUES ('$number','$name')";
-
-		$result=mysql_query($query,$connection) 
-		   or print "storeperson query '$query' failed because ".mysql_error();
-} /* storemember */
 
 if($count==1){
 // Register $myusername, $voterNum and redirect to file "candidates.php"
