@@ -19,7 +19,7 @@
 				<input name='myusername' type='text' id='myusername' class="input ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-a" data-form="ui-body-a" value='' placeholder="Username" />
 				<label for="voterNum" class="ui-hidden-accessible">Voter Number:</label>
 				<input name='voterNum' type='text' id='voterNum' class="input ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-a" data-form="ui-body-a" value="" placeholder="Voter Number" />
-				<input type='submit' name='Submit' value='Login' />
+				<input type='submit' name='Submit' value='Login' /><br /><br />
 				
 			</form>
 			<form name='register' method='post' action='register.php'>
