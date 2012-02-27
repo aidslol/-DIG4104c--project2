@@ -26,7 +26,7 @@ $result = mysql_query($sql);
 
 
 // go back to login page
-header("location:project2.php");
+//header("location:project2.php");
 
 ob_end_flush();
 ?>
