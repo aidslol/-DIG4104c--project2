@@ -21,12 +21,16 @@ $number = mysql_real_escape_string($number);
 $name = mysql_real_escape_string($name);
 
 // inserts data provided in register form to database
-$sql="INSERT INTO $tbl_name (username, password) VALUES ($name, $number)";
+$sql="INSERT INTO $tbl_name (username, password) VALUES ('$name','$number')";
 $result = mysql_query($sql); 
-
 
 // go back to login page
 //header("location:project2.php");
+?>
+
+<a href="project2.php">Click to Login</a>
+
+<?php
 
 ob_end_flush();
 ?>

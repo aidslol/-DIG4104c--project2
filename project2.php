@@ -28,7 +28,7 @@
 				<input name='name' type='text' id='name' class="input ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-a" data-form="ui-body-a" value='' placeholder="Username" />
 				<label for="number" class="ui-hidden-accessible">Voter Number:</label>
 				<input name='number' type='text' id='number' class="input ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-a" data-form="ui-body-a" value="" placeholder="Voter Number" />
-				<input type='submit' name='Submit' value='Register' />
+				<input type='submit' name='Submit' value='Register' rel="external" />
 			</form>
 		</div>
 	</body>
