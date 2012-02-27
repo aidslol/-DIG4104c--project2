@@ -26,11 +26,28 @@ $result = mysql_query($sql);
 
 // go back to login page
 //header("location:project2.php");
-?>
-
-<a href="project2.php">Click to Login</a>
-
-<?php
 
 ob_end_flush();
+
 ?>
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Project 2: Register</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="css/vote_theme.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile.structure-1.0.1.min.css" />
+		<link rel="stylesheet" href="css/text.css" />
+		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	</head>
+	<body>
+		<div data-role="page" data-theme="a">
+			<div class="ui-header ui-bar-a" role="banner" data-role="header" data-form="ui-bar-a" data-theme="a" data-swatch="a">
+				<h2 class="head" aria-level="1" role="heading" tabindex="0">Toontown 2012 Elections</h2>
+			</div>
+			<a href="project2.php">Click to Login</a>
+		</div>
+	</body>
+</html>
