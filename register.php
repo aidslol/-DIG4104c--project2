@@ -21,7 +21,7 @@ $number = mysql_real_escape_string($number);
 $name = mysql_real_escape_string($name);
 
 // inserts data provided in register form to database
-$sql="INSERT INTO members ('username','password') VALUES ($number,$name)";
+$sql="INSERT INTO members (username, password) VALUES ($number,$name)";
 mysql_query($sql); 
 
 // go back to login page
