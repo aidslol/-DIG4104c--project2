@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Project 2: Login</title>
+		<title>Project 2: Login Page</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link rel="stylesheet" href="css/vote_theme.min.css" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile.structure-1.0.1.min.css" />
@@ -21,15 +21,8 @@
 				<label for="voterNum" class="ui-hidden-accessible">Voter Number:</label>
 				<input name='voterNum' type='text' id='voterNum' class="input ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-a" data-form="ui-body-a" value="" placeholder="Voter Number" />
 				<input type='submit' name='Submit' value='Login' /><br /><br />
-				
 			</form>
-			<form name='register' method='post' action='register.php'>
-				<label for='name' class='ui-hidden-accessible'>Username:</label>
-				<input name='name' type='text' id='name' class="input ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-a" data-form="ui-body-a" value='' placeholder="Username" />
-				<label for="number" class="ui-hidden-accessible">Voter Number:</label>
-				<input name='number' type='text' id='number' class="input ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-a" data-form="ui-body-a" value="" placeholder="Voter Number" />
-				<input type='submit' name='Submit' value='Register' rel="external" />
-			</form>
+			<p><a href="signup.php">Sign-up to Vote</a></p>
 		</div>
 	</body>
 </html>
