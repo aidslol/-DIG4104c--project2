@@ -30,7 +30,9 @@ $result = mysql_query($sql);
 ob_end_flush();
 
 ?>
-
+<!-- mark-up provides a link back to the main page 
+	after creating a user account.  -->
+	
 <!DOCTYPE html>
 <html>
 	<head>
