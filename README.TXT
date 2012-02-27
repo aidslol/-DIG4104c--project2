@@ -12,8 +12,8 @@ class was pretty much just the groups presenting project 3 ideas, and the inform
 
 *** Database Info *** ph652925 / carter   ---philip
 
-** Testing commit to repo.
-
 Corey again: Looked into the checkboxes thing, and the only solutions I found were jQuery solutions. We're just starting to learn jQuery in my other class, and I can't learn enough in two days to fix something up. Anyone good with jQuery is welcome to try.
 
 ^^^ You shouldn't need any jQuery. <input type='checkbox' checked='yes'> makes them default to checked. create an if statement in php that looks at the database to see if voted == true, then set checked = yes. no jQuery, no Javascript, no AJAX, just simple HTML and PHP.
+
+Hey, this is Paul. I got the insert query to work, so registration should be good. I separated the registration from the log in page and added mark-up to link back to certain pages to try and combat the pseudo page issue. Will be putting in the voting system and flushing out any other issues in the back-end.
