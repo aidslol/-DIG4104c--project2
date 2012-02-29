@@ -3,7 +3,7 @@
 	// gatekeeper - if the user isn't logged in, they are redirected to the login page
 	session_start();
 	if( !isset($_SESSION['myusername'])){
-	header("location:main_login.php");
+	header("location:project2.php");
 	}
 	
 	// Need to get from login page to this one, then from here to some page that says you voted/go to results.
