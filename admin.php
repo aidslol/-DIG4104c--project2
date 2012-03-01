@@ -4,8 +4,9 @@ if($_SESSION['myusername'] != "admin"){
 header("location:main_login.php");
 } */
 ?>
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Project 2 Admin Panel</title>
@@ -46,10 +47,10 @@ echo "</table></div>";
 
 function resetvote($action)
 {
-	$query1="UPDATE members SET voted='0' WHERE id = ".$action;
-	$query2="UPDATE members SET candidate='' WHERE id = ".$action;
-	$result1=mysql_query($query1);
-	$result2=mysql_query($query2);
+	$query="UPDATE members SET voted='0' WHERE id = ".$action;
+	$result=mysql_query($query);
+	$query="UPDATE members SET candidate='' WHERE id = ".$action;
+	$result=mysql_query($query);
 }
 
 function erasehistory($connection)
