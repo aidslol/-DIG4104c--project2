@@ -1,4 +1,5 @@
 <?php
+session_start();
 ob_start();
 $host="localhost"; // Host name 
 $username="ph652925"; // Mysql username 
@@ -14,10 +15,14 @@ mysql_select_db("$db_name")or die("cannot select DB");
 $myusername=$_POST['myusername']; 
 $voterNum=$_POST['voterNum'];
 
+//session variables
+$_SESSION['myusername'] = $myusername;
+$_SESSION['voterNum'] = $voterNum; 
+
 // To protect MySQL injection
 $myusername = stripslashes($myusername);
-$voterNum = stripslashes($voterNum);
 $myusername = mysql_real_escape_string($myusername);
+$voterNum = stripslashes($voterNum);
 $voterNum = mysql_real_escape_string($voterNum);
 
 // gets data provided in login from the database
@@ -27,11 +32,9 @@ $result=mysql_query($sql);
 // Mysql_num_row is counting table row
 $count=mysql_num_rows($result);
 // If result matched $myusername and $voterNum, table row must be 1 row
-
 if($count==1){
+
 // Register $myusername, $voterNum and redirect to file "candidates.php"
-session_register("myusername");
-session_register("voterNum"); 
 header("location:candidates.php");
 }
 else {
