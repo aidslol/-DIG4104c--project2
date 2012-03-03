@@ -19,3 +19,5 @@ Corey again: Looked into the checkboxes thing, and the only solutions I found we
 Hey, this is Paul. I got the insert query to work, so registration should be good. I separated the registration from the log in page and added mark-up to link back to certain pages to try and combat the pseudo page issue. Will be putting in the voting system and flushing out any other issues in the back-end.
 
 I figured out that javascript library for the results page, but I can't get my php to work with it. I'm not sure if I'm connecting or querying wrong because the page is always blank. --jeremy
+
+** Major update includes working voting system, still gotta add a conditional that allows only one vote etc. Phil, have you looked into the "sending headers" issue? What are we going to do about this results page?

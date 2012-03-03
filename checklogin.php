@@ -15,10 +15,6 @@ mysql_select_db("$db_name")or die("cannot select DB");
 $myusername=$_POST['myusername']; 
 $voterNum=$_POST['voterNum'];
 
-//session variables
-$_SESSION['myusername'] = $myusername;
-$_SESSION['voterNum'] = $voterNum; 
-
 // To protect MySQL injection
 $myusername = stripslashes($myusername);
 $myusername = mysql_real_escape_string($myusername);
@@ -34,8 +30,14 @@ $count=mysql_num_rows($result);
 // If result matched $myusername and $voterNum, table row must be 1 row
 if($count==1){
 
+//session variables
+$_SESSION['myusername'] = $myusername;
+$_SESSION['voterNum'] = $voterNum; 
+
 // Register $myusername, $voterNum and redirect to file "candidates.php"
+echo ('<META HTTP-EQUIV="Refresh" Content="0; URL=success.php">');
 header("location:candidates.php");
+ 
 }
 else {
 header("location:project2.php");
