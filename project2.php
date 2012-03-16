@@ -15,7 +15,7 @@
 				<h2 class="head" aria-level="1" role="heading" tabindex="0">Toontown 2012 Elections</h2>
 			</div>
 			<h3>admin account is admin / 1234 </h3>
-			<form name='login' method='post' action='checklogin.php'>
+			<form name='login' method='post' action='checklogin.php' data-ajax="false">
 				<label for='myusername' class='ui-hidden-accessible'>Username:</label>
 				<input name='myusername' type='text' id='myusername' class="input ui-input-text ui-body-null ui-corner-all ui-shadow-inset ui-body-a" data-form="ui-body-a" value='' placeholder="Username" />
 				<label for="voterNum" class="ui-hidden-accessible">Voter Number:</label>
