@@ -21,3 +21,7 @@ Hey, this is Paul. I got the insert query to work, so registration should be goo
 I figured out that javascript library for the results page, but I can't get my php to work with it. I'm not sure if I'm connecting or querying wrong because the page is always blank. --jeremy
 
 ** Major update includes working voting system, still gotta add a conditional that allows only one vote etc. Phil, have you looked into the "sending headers" issue? What are we going to do about this results page?
+
+!!! As of about 8pm 3/16/2012 Friday night, Sulley has been offline. We were able to connect via SFTP, but not via HTML. Also, the entire SVAD site won't resolve and we can't gain access to phpmyadmin. This makes it pretty much impossible to test our site. We'll try again in the AM, but for now, this is the best we can do. 
+
+Please keep in mind that project2.php and candidates.php may not be linking correctly at this time due to an unknown bug related to php header redirects. !!! Philip
